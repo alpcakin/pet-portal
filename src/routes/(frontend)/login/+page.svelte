@@ -1,5 +1,6 @@
 <script lang="ts">
     import { goto } from '$app/navigation';
+    import {currentUser} from "$lib/stores";
     let name = '';
     let password = '';
     let error = '';
@@ -13,7 +14,9 @@
         const data = await res.json();
 
         if (res.ok) {
-            goto('/(frontend)/dashboard');
+            localStorage.setItem('user', JSON.stringify(data.user));
+            currentUser.set(data.user);
+            goto('/dashboard');
         } else {
             error = data.message;
         }
