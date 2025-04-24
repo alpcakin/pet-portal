@@ -1,0 +1,15 @@
+[
+  {
+    "id": 1,
+    "name": "alp",
+    "password": "$2b$10$tDlNtgQnECYoPT4iVRk3PeLDQSXgiKCQCFYUSEbCrG4xOrOMlf5uO",
+    "role": "user",
+    "budget": 100,
+    "pets": [],
+    "inventory": {
+      "food": 0,
+      "toy": 0,
+      "treat": 0
+    }
+  }
+]
