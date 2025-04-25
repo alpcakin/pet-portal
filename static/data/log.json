@@ -38,5 +38,10 @@
     "action": "alp played with Mittens (−$10)",
     "timestamp": "2025-04-25T16:24:21.732Z"
   },
-  "[2025-04-25T16:24:21.743Z] alp played with Mittens (−$10)"
+  "[2025-04-25T16:24:21.743Z] alp played with Mittens (−$10)",
+  {
+    "action": "alp fed Mittens (−$5)",
+    "timestamp": "2025-04-25T16:40:55.393Z"
+  },
+  "[2025-04-25T16:40:55.406Z] alp fed Mittens (−$5)"
 ]

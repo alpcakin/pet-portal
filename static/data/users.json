@@ -13,5 +13,18 @@
       "toy": 0,
       "treat": 0
     }
+  },
+  {
+    "id": 2,
+    "name": "alp2",
+    "password": "$2b$10$5Z9f0uGqdq6oZ4tlLlZ3C.Zu/qKfRzgXPmM8GtGx32T/J01mZFyam",
+    "role": "admin",
+    "budget": 100,
+    "pets": [],
+    "inventory": {
+      "food": 0,
+      "toy": 0,
+      "treat": 0
+    }
   }
 ]

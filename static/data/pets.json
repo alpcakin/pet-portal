@@ -16,5 +16,14 @@
     "happiness": 100,
     "adopted": true,
     "ownerId": 1
+  },
+  {
+    "id": 3,
+    "name": "puppy2",
+    "type": "puppy",
+    "hunger": 50,
+    "happiness": 50,
+    "adopted": false,
+    "ownerId": null
   }
 ]

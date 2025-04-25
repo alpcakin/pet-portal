@@ -12,6 +12,7 @@ export interface User {
 	id: number;
 	name: string;
 	passwordHash: string;
+	role: 'user' | 'admin';
 	pets: number[];
 	budget: number;
 	inventory: {
@@ -20,5 +21,6 @@ export interface User {
 		treat: number;
 	};
 }
+
 
 export type SafeUser = Omit<User, 'passwordHash'>;
