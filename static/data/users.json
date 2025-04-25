@@ -5,7 +5,10 @@
     "password": "$2b$10$tDlNtgQnECYoPT4iVRk3PeLDQSXgiKCQCFYUSEbCrG4xOrOMlf5uO",
     "role": "user",
     "budget": 100,
-    "pets": [],
+    "pets": [
+      1,
+      2
+    ],
     "inventory": {
       "food": 0,
       "toy": 0,

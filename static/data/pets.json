@@ -1,2 +1,20 @@
 [
+  {
+    "id": 1,
+    "name": "Buddy",
+    "type": "puppy",
+    "hunger": 50,
+    "happiness": 50,
+    "adopted": true,
+    "ownerId": 1
+  },
+  {
+    "id": 2,
+    "name": "Mittens",
+    "type": "kitten",
+    "hunger": 40,
+    "happiness": 60,
+    "adopted": true,
+    "ownerId": 1
+  }
 ]
