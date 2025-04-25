@@ -51,8 +51,16 @@
             if (res.ok) {
                 success = data.message;
                 error = '';
-                await updateUser(); // kullanıcıyı güncelle
-                await loadPets();   // pet'leri güncelle
+
+                // ✅ LOG MESSAGING
+                await fetch('/api/log', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ message: data.message }) // örneğin "Alice fed Buddy (-$5)"
+                });
+
+                await updateUser();
+                await loadPets();
             } else if (res.status === 302) {
                 goto('/shop');
             } else {
@@ -64,6 +72,7 @@
             success = '';
         }
     }
+
 
     async function updateUser() {
         if (!user?.id) return;

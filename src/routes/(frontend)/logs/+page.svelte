@@ -1,22 +1,29 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
-	let logs: string[] = [];
-	let error = '';
+    import { onMount } from 'svelte';
 
-	onMount(async () => {
-		// TODO get logs
-	});
+    let logs: string[] = [];
+    let error = '';
+
+    async function loadLogs() {
+        try {
+            const res = await fetch('/api/log');
+            logs = await res.json();
+        } catch {
+            error = 'Failed to load logs.';
+        }
+    }
+
+    onMount(loadLogs);
 </script>
 
-<h1>Action Log</h1>
+<h2>Action History</h2>
 
 {#if error}
-    <p style="color: red;">{error}</p>
+    <p>{error}</p>
 {:else if logs.length === 0}
-    <p>No actions have been logged yet.</p>
+    <p>No logs found.</p>
 {:else}
-    <!--   render logs here with the newest on top-->
+    {#each logs as log}
+        <p>{log}</p>
+    {/each}
 {/if}
-
-<style>
-</style>
