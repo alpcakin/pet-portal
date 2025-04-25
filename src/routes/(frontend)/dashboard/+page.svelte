@@ -14,13 +14,32 @@
         try {
             const res = await fetch('/api/pets');
             const allPets = await res.json();
-            pets = allPets.filter((pet: Pet) => user?.pets.includes(pet.id));
+
+            let freshUser = $currentUser;
+            if (!freshUser || !freshUser.pets) {
+                const raw = localStorage.getItem('user');
+                if (raw) {
+                    freshUser = JSON.parse(raw);
+                    currentUser.set(freshUser);
+                }
+            }
+
+            if (freshUser && freshUser.pets) {
+                pets = allPets.filter((pet: Pet) => freshUser.pets.includes(pet.id));
+            } else {
+                pets = [];
+            }
         } catch (err) {
             error = 'Failed to load pets.';
         }
     }
 
     async function handleAction(petId: number, action: 'feed' | 'toy' | 'return') {
+        if (!user?.id) {
+            goto('/login');
+            return;
+        }
+
         try {
             const res = await fetch('/api/actions', {
                 method: 'POST',
@@ -32,7 +51,10 @@
             if (res.ok) {
                 success = data.message;
                 error = '';
-                loadPets();
+                await updateUser(); // kullanıcıyı güncelle
+                await loadPets();   // pet'leri güncelle
+            } else if (res.status === 302) {
+                goto('/shop');
             } else {
                 error = data.message;
                 success = '';
@@ -41,6 +63,15 @@
             error = 'Action failed.';
             success = '';
         }
+    }
+
+    async function updateUser() {
+        if (!user?.id) return;
+
+        const res = await fetch(`/api/auth/user?id=${user.id}`);
+        const updatedUser = await res.json();
+        localStorage.setItem('user', JSON.stringify(updatedUser));
+        currentUser.set(updatedUser);
     }
 
     onMount(() => {
@@ -59,7 +90,6 @@
 
 {#if user}
     <h3>💰 Budget: {user.budget}$</h3>
-
     <h3>🎒 Inventory</h3>
     <ul>
         <li>Food: {user.inventory.food}</li>
@@ -90,7 +120,6 @@
         list-style-type: none;
         padding-left: 0;
     }
-
     li {
         border: 1px solid #ccc;
         margin-bottom: 1rem;

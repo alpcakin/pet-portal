@@ -1,2 +1,22 @@
 [
+  {
+    "action": "alp fed Buddy (−$5)",
+    "timestamp": "2025-04-25T13:33:31.145Z"
+  },
+  {
+    "action": "alp played with Buddy (−$10)",
+    "timestamp": "2025-04-25T13:33:32.549Z"
+  },
+  {
+    "action": "alp returned Buddy (−$20)",
+    "timestamp": "2025-04-25T13:33:34.227Z"
+  },
+  {
+    "action": "alp played with Mittens (−$10)",
+    "timestamp": "2025-04-25T13:33:38.046Z"
+  },
+  {
+    "action": "alp fed Mittens (−$5)",
+    "timestamp": "2025-04-25T13:33:42.354Z"
+  }
 ]

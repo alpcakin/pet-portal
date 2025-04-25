@@ -4,9 +4,8 @@
     "name": "alp",
     "password": "$2b$10$tDlNtgQnECYoPT4iVRk3PeLDQSXgiKCQCFYUSEbCrG4xOrOMlf5uO",
     "role": "user",
-    "budget": 100,
+    "budget": 50,
     "pets": [
-      1,
       2
     ],
     "inventory": {

@@ -3,17 +3,17 @@
     "id": 1,
     "name": "Buddy",
     "type": "puppy",
-    "hunger": 50,
-    "happiness": 50,
-    "adopted": true,
-    "ownerId": 1
+    "hunger": 30,
+    "happiness": 80,
+    "adopted": false,
+    "ownerId": null
   },
   {
     "id": 2,
     "name": "Mittens",
     "type": "kitten",
-    "hunger": 40,
-    "happiness": 60,
+    "hunger": 20,
+    "happiness": 90,
     "adopted": true,
     "ownerId": 1
   }
