@@ -2,7 +2,7 @@ export class Pet {
     constructor(
         public id: number,
         public name: string,
-        public type: 'puppy' | 'kitten',
+        public type: string,
         public hunger: number = 50,
         public happiness: number = 50,
         public adopted: boolean = false,

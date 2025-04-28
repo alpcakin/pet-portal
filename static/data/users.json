@@ -20,10 +20,11 @@
     "name": "alp2",
     "password": "$2b$10$5Z9f0uGqdq6oZ4tlLlZ3C.Zu/qKfRzgXPmM8GtGx32T/J01mZFyam",
     "role": "admin",
-    "budget": 5,
+    "budget": 0,
     "pets": [
       4,
-      1
+      1,
+      5
     ],
     "inventory": {
       "food": 0,
