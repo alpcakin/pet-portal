@@ -43,5 +43,35 @@
     "action": "alp fed Mittens (−$5)",
     "timestamp": "2025-04-25T16:40:55.393Z"
   },
-  "[2025-04-25T16:40:55.406Z] alp fed Mittens (−$5)"
+  "[2025-04-25T16:40:55.406Z] alp fed Mittens (−$5)",
+  {
+    "action": "alp played with Mittens (−$10)",
+    "timestamp": "2025-04-28T13:17:05.374Z"
+  },
+  "[2025-04-28T13:17:05.397Z] alp played with Mittens (−$10)",
+  {
+    "action": "alp fed Mittens (−$5)",
+    "timestamp": "2025-04-28T13:18:58.742Z"
+  },
+  "[2025-04-28T13:18:58.754Z] alp fed Mittens (−$5)",
+  {
+    "action": "alp returned Mittens (−$20)",
+    "timestamp": "2025-04-28T13:20:52.110Z"
+  },
+  "[2025-04-28T13:20:52.129Z] alp returned Mittens (−$20)",
+  {
+    "action": "alp fed Buddy (−$5)",
+    "timestamp": "2025-04-28T13:31:47.903Z"
+  },
+  "[2025-04-28T13:31:47.915Z] alp fed Buddy (−$5)",
+  {
+    "action": "alp played with Buddy (−$10)",
+    "timestamp": "2025-04-28T13:31:58.197Z"
+  },
+  "[2025-04-28T13:31:58.212Z] alp played with Buddy (−$10)",
+  {
+    "action": "alp fed Buddy (−$5)",
+    "timestamp": "2025-04-28T13:37:10.329Z"
+  },
+  "[2025-04-28T13:37:10.342Z] alp fed Buddy (−$5)"
 ]

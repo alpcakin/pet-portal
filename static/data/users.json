@@ -4,14 +4,14 @@
     "name": "alp",
     "password": "$2b$10$tDlNtgQnECYoPT4iVRk3PeLDQSXgiKCQCFYUSEbCrG4xOrOMlf5uO",
     "role": "user",
-    "budget": 15,
+    "budget": 45,
     "pets": [
-      2
+      1
     ],
     "inventory": {
-      "food": 1,
+      "food": 0,
       "toy": 0,
-      "treat": 0
+      "treat": 1
     }
   },
   {

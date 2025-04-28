@@ -3,10 +3,10 @@
     "id": 1,
     "name": "Buddy",
     "type": "puppy",
-    "hunger": 30,
-    "happiness": 80,
-    "adopted": false,
-    "ownerId": null
+    "hunger": 0,
+    "happiness": 100,
+    "adopted": true,
+    "ownerId": 1
   },
   {
     "id": 2,
@@ -14,8 +14,8 @@
     "type": "kitten",
     "hunger": 0,
     "happiness": 100,
-    "adopted": true,
-    "ownerId": 1
+    "adopted": false,
+    "ownerId": null
   },
   {
     "id": 3,

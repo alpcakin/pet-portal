@@ -76,7 +76,7 @@
                 <p>Hunger: {pet.hunger} | Happiness: {pet.happiness}</p>
                 <p>Status: {pet.adopted ? 'Adopted' : 'Available'}</p>
                 {#if !pet.adopted}
-                    <button on:click={() => adopt(pet.id)}>🐾 Adopt</button>
+                    <button on:click={() => adoptPet(pet.id)}>🐾 Adopt</button>
                 {/if}
             </li>
         {/each}

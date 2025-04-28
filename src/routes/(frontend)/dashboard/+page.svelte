@@ -92,14 +92,14 @@
     });
 </script>
 
-<h1>📋 Your Adopted Pets</h1>
+<h1> Your Adopted Pets</h1>
 
 {#if success}<p style="color: green;">{success}</p>{/if}
 {#if error}<p style="color: red;">{error}</p>{/if}
 
 {#if user}
-    <h3>💰 Budget: {user.budget}$</h3>
-    <h3>🎒 Inventory</h3>
+    <h3> Budget: {user.budget}$</h3>
+    <h3> Inventory</h3>
     <ul>
         <li>Food: {user.inventory.food}</li>
         <li>Toy: {user.inventory.toy}</li>
