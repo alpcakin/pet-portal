@@ -93,5 +93,55 @@
     "action": "alp2 gave a treat to max (−$15)",
     "timestamp": "2025-04-28T14:00:44.013Z"
   },
-  "[2025-04-28T14:00:44.030Z] alp2 gave a treat to max (−$15)"
+  "[2025-04-28T14:00:44.030Z] alp2 gave a treat to max (−$15)",
+  {
+    "action": "alp2 played with max (−$10)",
+    "timestamp": "2025-04-28T14:26:44.215Z"
+  },
+  "[2025-04-28T14:26:44.235Z] alp2 played with max (−$10)",
+  {
+    "action": "alp2 played with max (−$10)",
+    "timestamp": "2025-04-28T14:26:47.102Z"
+  },
+  "[2025-04-28T14:26:47.114Z] alp2 played with max (−$10)",
+  {
+    "action": "alp2 played with max (−$10)",
+    "timestamp": "2025-04-28T14:26:49.348Z"
+  },
+  "[2025-04-28T14:26:49.360Z] alp2 played with max (−$10)",
+  {
+    "action": "alp2 fed max (−$5)",
+    "timestamp": "2025-04-28T14:26:50.763Z"
+  },
+  "[2025-04-28T14:26:50.777Z] alp2 fed max (−$5)",
+  {
+    "action": "alp2 gave a treat to max (−$15)",
+    "timestamp": "2025-04-28T14:26:55.718Z"
+  },
+  "[2025-04-28T14:26:55.732Z] alp2 gave a treat to max (−$15)",
+  {
+    "action": "alp played with puppy2 (−$10)",
+    "timestamp": "2025-04-28T14:27:58.214Z"
+  },
+  "[2025-04-28T14:27:58.227Z] alp played with puppy2 (−$10)",
+  {
+    "action": "alp2 fed max (−$5)",
+    "timestamp": "2025-04-28T14:32:00.335Z"
+  },
+  "[2025-04-28T14:32:00.346Z] alp2 fed max (−$5)",
+  {
+    "action": "alp2 fed max (−$5)",
+    "timestamp": "2025-04-28T14:32:02.227Z"
+  },
+  "[2025-04-28T14:32:02.237Z] alp2 fed max (−$5)",
+  {
+    "action": "alp2 played with max (−$10)",
+    "timestamp": "2025-04-28T14:32:04.235Z"
+  },
+  "[2025-04-28T14:32:04.247Z] alp2 played with max (−$10)",
+  {
+    "action": "alp2 played with max (−$10)",
+    "timestamp": "2025-04-28T14:32:06.209Z"
+  },
+  "[2025-04-28T14:32:06.220Z] alp2 played with max (−$10)"
 ]

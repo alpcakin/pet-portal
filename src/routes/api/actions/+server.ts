@@ -1,6 +1,8 @@
 import type { RequestHandler } from '@sveltejs/kit';
 import path from 'path';
 import { readFile, writeFile } from 'fs/promises';
+import { Pet } from '$lib/models/Pet';
+
 
 const usersPath = path.resolve('static/data/users.json');
 const petsPath = path.resolve('static/data/pets.json');
@@ -14,7 +16,17 @@ export const POST: RequestHandler = async ({ request }) => {
 	const logs = JSON.parse(await readFile(logPath, 'utf-8'));
 
 	const user = users.find((u: any) => u.id === userId);
-	const pet = pets.find((p: any) => p.id === petId);
+	const petData = pets.find((p: any) => p.id === petId);
+	const pet = new Pet(
+		petData.id,
+		petData.name,
+		petData.type,
+		petData.hunger,
+		petData.happiness,
+		petData.adopted,
+		petData.ownerId
+	);
+
 
 	if (!user || !pet || !user.pets.includes(petId)) {
 		return new Response(JSON.stringify({ message: 'Invalid user or pet' }), {
@@ -31,14 +43,14 @@ export const POST: RequestHandler = async ({ request }) => {
 		case 'feed':
 			itemKey = 'food';
 			cost = 5;
-			pet.hunger = Math.max(0, pet.hunger - 20);
+			pet.feed();
 			message = `${user.name} fed ${pet.name} (−$${cost})`;
 			break;
 
 		case 'toy':
 			itemKey = 'toy';
 			cost = 10;
-			pet.happiness = Math.min(100, pet.happiness + 30);
+			pet.play();
 			message = `${user.name} played with ${pet.name} (−$${cost})`;
 			break;
 
@@ -53,8 +65,7 @@ export const POST: RequestHandler = async ({ request }) => {
 		case 'treat':
 			itemKey = 'treat';
 			cost = 15;
-			pet.hunger = Math.max(0, pet.hunger - 10);
-			pet.happiness = Math.min(100, pet.happiness + 10);
+			pet.treat();
 			message = `${user.name} gave a treat to ${pet.name} (−$${cost})`;
 			break;
 
@@ -76,6 +87,8 @@ export const POST: RequestHandler = async ({ request }) => {
 			headers: { 'Content-Type': 'application/json' }
 		});
 	}
+	const petIndex = pets.findIndex((p: any) => p.id === petId);
+	pets[petIndex] = pet;
 
 
 	await writeFile(usersPath, JSON.stringify(users, null, 2), 'utf-8');

@@ -5,8 +5,8 @@
     "type": "puppy",
     "hunger": 0,
     "happiness": 100,
-    "adopted": false,
-    "ownerId": null
+    "adopted": true,
+    "ownerId": 2
   },
   {
     "id": 2,
@@ -30,8 +30,8 @@
     "id": 4,
     "name": "max",
     "type": "puppy",
-    "hunger": 40,
-    "happiness": 60,
+    "hunger": 0,
+    "happiness": 100,
     "adopted": true,
     "ownerId": 2
   }
