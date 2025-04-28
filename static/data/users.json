@@ -4,14 +4,15 @@
     "name": "alp",
     "password": "$2b$10$tDlNtgQnECYoPT4iVRk3PeLDQSXgiKCQCFYUSEbCrG4xOrOMlf5uO",
     "role": "user",
-    "budget": 45,
+    "budget": 10,
     "pets": [
-      1
+      2,
+      3
     ],
     "inventory": {
       "food": 0,
       "toy": 0,
-      "treat": 1
+      "treat": 0
     }
   },
   {
@@ -19,8 +20,10 @@
     "name": "alp2",
     "password": "$2b$10$5Z9f0uGqdq6oZ4tlLlZ3C.Zu/qKfRzgXPmM8GtGx32T/J01mZFyam",
     "role": "admin",
-    "budget": 100,
-    "pets": [],
+    "budget": 85,
+    "pets": [
+      4
+    ],
     "inventory": {
       "food": 0,
       "toy": 0,

@@ -5,8 +5,8 @@
     "type": "puppy",
     "hunger": 0,
     "happiness": 100,
-    "adopted": true,
-    "ownerId": 1
+    "adopted": false,
+    "ownerId": null
   },
   {
     "id": 2,
@@ -14,8 +14,8 @@
     "type": "kitten",
     "hunger": 0,
     "happiness": 100,
-    "adopted": false,
-    "ownerId": null
+    "adopted": true,
+    "ownerId": 1
   },
   {
     "id": 3,
@@ -23,7 +23,16 @@
     "type": "puppy",
     "hunger": 50,
     "happiness": 50,
-    "adopted": false,
-    "ownerId": null
+    "adopted": true,
+    "ownerId": 1
+  },
+  {
+    "id": 4,
+    "name": "max",
+    "type": "puppy",
+    "hunger": 40,
+    "happiness": 60,
+    "adopted": true,
+    "ownerId": 2
   }
 ]

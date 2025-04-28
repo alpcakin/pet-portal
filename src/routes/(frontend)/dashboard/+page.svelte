@@ -34,7 +34,7 @@
         }
     }
 
-    async function handleAction(petId: number, action: 'feed' | 'toy' | 'return') {
+    async function handleAction(petId: number, action: 'feed' | 'toy' | 'return' | 'treat') {
         if (!user?.id) {
             goto('/login');
             return;
@@ -52,11 +52,11 @@
                 success = data.message;
                 error = '';
 
-                // ✅ LOG MESSAGING
+
                 await fetch('/api/log', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ message: data.message }) // örneğin "Alice fed Buddy (-$5)"
+                    body: JSON.stringify({ message: data.message })
                 });
 
                 await updateUser();
@@ -115,12 +115,13 @@
             <li>
                 <h3>{pet.name} ({pet.type})</h3>
                 <p>Hunger: {pet.hunger} | Happiness: {pet.happiness}</p>
-
-                <button on:click={() => handleAction(pet.id, 'feed')}>🍖 Feed (-$5)</button>
-                <button on:click={() => handleAction(pet.id, 'toy')}>🧸 Play (-$10)</button>
-                <button on:click={() => handleAction(pet.id, 'return')}>↩️ Return (-$20)</button>
+                <button on:click={() => handleAction(pet.id, 'feed')}>Feed (-$5)</button>
+                <button on:click={() => handleAction(pet.id, 'toy')}>Play (-$10)</button>
+                <button on:click={() => handleAction(pet.id, 'treat')}>Treat (-$15)</button>
+                <button on:click={() => handleAction(pet.id, 'return')}>Return (-$20)</button>
             </li>
         {/each}
+
     </ul>
 {/if}
 

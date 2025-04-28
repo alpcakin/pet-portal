@@ -73,5 +73,25 @@
     "action": "alp fed Buddy (−$5)",
     "timestamp": "2025-04-28T13:37:10.329Z"
   },
-  "[2025-04-28T13:37:10.342Z] alp fed Buddy (−$5)"
+  "[2025-04-28T13:37:10.342Z] alp fed Buddy (−$5)",
+  {
+    "action": "alp returned Buddy (−$20)",
+    "timestamp": "2025-04-28T13:56:16.860Z"
+  },
+  "[2025-04-28T13:56:16.883Z] alp returned Buddy (−$20)",
+  {
+    "action": "alp gave a treat to Mittens (−$15)",
+    "timestamp": "2025-04-28T13:56:24.670Z"
+  },
+  "[2025-04-28T13:56:24.684Z] alp gave a treat to Mittens (−$15)",
+  {
+    "action": "alp gave a treat to Mittens (−$15)",
+    "timestamp": "2025-04-28T13:56:30.724Z"
+  },
+  "[2025-04-28T13:56:30.734Z] alp gave a treat to Mittens (−$15)",
+  {
+    "action": "alp2 gave a treat to max (−$15)",
+    "timestamp": "2025-04-28T14:00:44.013Z"
+  },
+  "[2025-04-28T14:00:44.030Z] alp2 gave a treat to max (−$15)"
 ]

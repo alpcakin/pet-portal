@@ -50,6 +50,14 @@ export const POST: RequestHandler = async ({ request }) => {
 			message = `${user.name} returned ${pet.name} (−$${cost})`;
 			break;
 
+		case 'treat':
+			itemKey = 'treat';
+			cost = 15;
+			pet.hunger = Math.max(0, pet.hunger - 10);
+			pet.happiness = Math.min(100, pet.happiness + 10);
+			message = `${user.name} gave a treat to ${pet.name} (−$${cost})`;
+			break;
+
 		default:
 			return new Response(JSON.stringify({ message: 'Invalid action' }), {
 				status: 400,
@@ -57,25 +65,23 @@ export const POST: RequestHandler = async ({ request }) => {
 			});
 	}
 
-	// Eğer item varsa inventory'den kullan, yoksa bütçeden düş
 	if (itemKey && user.inventory[itemKey] > 0) {
 		user.inventory[itemKey] -= 1;
 		cost = 0;
 	} else if (user.budget >= cost) {
 		user.budget -= cost;
 	} else {
-		// Ne item ne para varsa shop'a yönlendir
 		return new Response(JSON.stringify({ redirect: '/shop' }), {
 			status: 302,
 			headers: { 'Content-Type': 'application/json' }
 		});
 	}
 
-	// Güncellemeleri yaz
+
 	await writeFile(usersPath, JSON.stringify(users, null, 2), 'utf-8');
 	await writeFile(petsPath, JSON.stringify(pets, null, 2), 'utf-8');
 
-	// Log kaydı ekle
+
 	logs.push({ action: message, timestamp: new Date().toISOString() });
 	await writeFile(logPath, JSON.stringify(logs, null, 2), 'utf-8');
 
