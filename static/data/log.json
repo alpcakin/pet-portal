@@ -148,5 +148,50 @@
     "action": "alp2 fed a (−$5)",
     "timestamp": "2025-04-28T14:56:45.777Z"
   },
-  "[2025-04-28T14:56:45.795Z] alp2 fed a (−$5)"
+  "[2025-04-28T14:56:45.795Z] alp2 fed a (−$5)",
+  {
+    "action": "alp2 fed a (−$5)",
+    "timestamp": "2025-04-29T12:45:19.338Z"
+  },
+  "[2025-04-29T12:45:19.390Z] alp2 fed a (−$5)",
+  {
+    "action": "alp2 gave a treat to a (−$15)",
+    "timestamp": "2025-04-29T12:45:20.694Z"
+  },
+  "[2025-04-29T12:45:20.713Z] alp2 gave a treat to a (−$15)",
+  {
+    "action": "alp2 gave a treat to a (−$15)",
+    "timestamp": "2025-04-29T12:45:23.006Z"
+  },
+  "[2025-04-29T12:45:23.030Z] alp2 gave a treat to a (−$15)",
+  {
+    "action": "alp2 returned Buddy (−$20)",
+    "timestamp": "2025-04-29T12:45:47.053Z"
+  },
+  "[2025-04-29T12:45:47.066Z] alp2 returned Buddy (−$20)",
+  {
+    "action": "alp2 fed a (−$5)",
+    "timestamp": "2025-04-29T13:33:13.083Z"
+  },
+  "[2025-04-29T13:33:13.139Z] alp2 fed a (−$5)",
+  {
+    "action": "alp2 fed a (−$5)",
+    "timestamp": "2025-04-29T13:33:16.165Z"
+  },
+  "[2025-04-29T13:33:16.191Z] alp2 fed a (−$5)",
+  {
+    "action": "alp2 played with a (−$10)",
+    "timestamp": "2025-04-29T13:33:18.981Z"
+  },
+  "[2025-04-29T13:33:19.001Z] alp2 played with a (−$10)",
+  {
+    "action": "alp2 fed a (−$5)",
+    "timestamp": "2025-04-29T13:33:22.689Z"
+  },
+  "[2025-04-29T13:33:22.723Z] alp2 fed a (−$5)",
+  {
+    "action": "alp2 fed max (−$5)",
+    "timestamp": "2025-04-29T13:36:19.865Z"
+  },
+  "[2025-04-29T13:36:19.879Z] alp2 fed max (−$5)"
 ]

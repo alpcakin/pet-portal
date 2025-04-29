@@ -23,13 +23,12 @@
     "budget": 0,
     "pets": [
       4,
-      1,
       5
     ],
     "inventory": {
       "food": 0,
       "toy": 0,
-      "treat": 0
+      "treat": 1
     }
   }
 ]

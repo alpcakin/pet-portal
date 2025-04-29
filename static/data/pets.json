@@ -5,8 +5,8 @@
     "type": "puppy",
     "hunger": 0,
     "happiness": 100,
-    "adopted": true,
-    "ownerId": 2
+    "adopted": false,
+    "ownerId": null
   },
   {
     "id": 2,
@@ -39,8 +39,8 @@
     "id": 5,
     "name": "a",
     "type": "puppy",
-    "hunger": 30,
-    "happiness": 50,
+    "hunger": 0,
+    "happiness": 100,
     "adopted": true,
     "ownerId": 2
   }
